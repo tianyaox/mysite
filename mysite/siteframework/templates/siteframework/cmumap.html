@@ -159,10 +159,11 @@
 		// }
 
 		setInterval(function(){
-			console.log($("#FromLocation").is(":focus"));
 			// if (screen.width < 767) {
 			if (document.documentElement.clientWidth<767){
+
 				$(".wrap").wrap("<div class='mobile-hide-button'></div>");
+
 				if ($("#FromLocation").is(":focus")){
 					$("#ToLocation").parent().css("display","none");
 					$(".mobile-hide-button").css("display","none");
@@ -182,8 +183,16 @@
 
 				}
 			}
+			else {
+				if (!($("#FromLocation").is(":focus"))){
+					$("#ToLocation").parent().css("display","inline-block");
+				}
+				if (!($("#ToLocation").is(":focus")) && !($("#FromLocation").is(":focus"))){
+					$("#FromLocation").parent().css("display","inline-block");	
+				}
+			}
 
-		},100);
+		},10);
 
 
 	</script>
