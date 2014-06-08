@@ -1,0 +1,106 @@
+/*@import "../CSS/cupertino/reset.css";*/
+body {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+@media screen and (max-width: 767px) {
+  a.pick-button {
+    position: relative;
+    right: -94%;
+    top: -25px;
+  }
+  .show-from-to {
+    display: block !important;
+  }
+  nav.navbar.navbar-default.navbar-fixed-top {
+    top: 0px;
+    -webkit-transition: top 1s;
+    transition: top 1s;
+  }
+  nav.navbar.navbar-default.navbar-fixed-top.clicked {
+    top: -50px;
+    -webkit-transition: top 1s;
+    transition: top 1s;
+  }
+  button.btn.btn-default.cancel-find {
+    display: block;
+    float: right;
+  }
+  button.btn.btn-default.find-button {
+    float: right;
+    margin-right: 5px;
+  }
+  a.btn.btn-default.signin-mobile {
+    display: block !important;
+    float: left;
+  }
+  ul.nav.navbar-nav.nav-right.pull-right.demo-signin {
+    display: none;
+  }
+  a.move-back-button {
+    display: none;
+  }
+  a.navbar-toggle.move-back-button-mobile {
+    padding-bottom: 3px;
+    color: black;
+  }
+  a.navbar-toggle.move-back-button-mobile span {
+    position: relative;
+    top: -1px;
+  }
+  ul.desktop-username{
+    display: none;
+  }
+  div.mobile-username{
+    display:inline-block !important; 
+    margin-left:15px;
+    padding-top: 6px;
+  }
+}
+.pick-button {
+  color: #f7544c;
+}
+.pick-button:hover {
+  color: #d41309;
+}
+.show-from-to {
+  display: none;
+  float: left;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+.show-from-to ul {
+  margin-bottom: 0px;
+}
+.ui-autocomplete {
+  position: absolute;
+  cursor: default;
+  z-index: 10000 !important;
+}
+button.cancel-find {
+  display: none;
+}
+a.btn.btn-default.signin-mobile {
+  display: none;
+}
+a.move-back-button {
+  margin-top: 0.7%;
+}
+select {
+  -webkit-apperance: none;
+}
+#DrawingSelectDIV {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+#DrawingSelectDIV #drawingSelect {
+  height: 100%;
+}
+ul.desktop-username{
+  padding-top: 15px;
+  padding-right: 15px;
+}
+div.mobile-username{
+  display: none;
+}
