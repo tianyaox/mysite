@@ -1,0 +1,162 @@
+<!doctype html>
+<html style="height: 101%; width: 100%;">
+	<head>
+		<meta charset='UTF-8'>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+		<title>Cmumap Nav</title>
+		
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+		
+		<link rel="stylesheet" type="text/css" href="/static/siteframework/css/reset.css">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="/static/siteframework/css/style.css">
+
+	</head>
+
+
+	<body style="height: 100%; width: 100%;">
+
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<div class="show-from-to">
+
+					<ul>
+
+						<li class="show-from">From:</li>
+
+						<li class="show-to">To:</li>
+
+					</ul>
+
+				</div>
+
+				<button type="button" class="navbar-toggle toggle-button"
+					data-toggle="collapse" data-target=".navbar-collapse">
+
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+
+				</button>
+
+				<a href="#" class="navbar-toggle move-back-button-mobile"> <span
+					class="glyphicon glyphicon-screenshot"></span>
+
+				</a>
+
+			</div>
+
+			<div class="navbar-collapse collapse">
+
+				<div class="navbar-form navbar-left">
+
+					<div class="navbar-input-group">
+
+						<div class="form-group">
+
+							<input type="text" class="form-control" id="FromLocation"
+								placeholder="From"> <a class="pick-button" href="#"
+								onclick="pickingLocation=1;map.setOptions({draggableCursor:'crosshair'});hideFind();return false;"><span
+								class="glyphicon glyphicon-map-marker"></span></a>
+
+
+
+						</div>
+
+						<div class="form-group">
+
+							<input type="text" id="ToLocation" class="form-control"
+								placeholder="To"> <a class="pick-button" href="#"
+								onclick="pickingLocation=2;map.setOptions({draggableCursor:'crosshair'});hideFind();return false;"><span
+								class="glyphicon glyphicon-map-marker"></span></a>
+
+						</div>
+
+
+
+						<a class="btn btn-default signin-mobile" href="/accounts/login">Sign in</a>
+
+						<button class="btn btn-default cancel-find" onclick="hideFind();">Cancel</button>
+
+						<button class="btn btn-default find-button"
+							onclick="userFindPath();showFromTo();hideFind();return false;">Find!</button>
+
+						<div style="clear: both;"></div>
+
+					</div>
+
+
+
+				</div>
+				<!-- Desktop signin -->
+
+
+				<ul class="nav navbar-nav nav-right pull-right demo-signin">
+					<li><a href="/accounts/login">Sign in</a></li>
+				</ul>
+
+				<a class="btn btn-default move-back-button"> <span
+					class="glyphicon glyphicon-screenshot"></span>
+
+				</a>
+
+			</div>
+
+		</div>
+
+	</nav>
+
+	<div id="DrawingSelectDIV">
+
+		<div>Current Floor:</div>
+
+		<select id="drawingSelect" class="form-control"
+			onchange="drawingBoxSelect();" />
+
+	</div>
+
+</body>
+
+
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script>
+		var input = document.getElementsByTagName('input')[0];
+		var input1 = document.getElementsByTagName('input')[1];
+		input.onkeypress = input.onkeydown = function() {
+	    	this.size = ( this.value.length > 20 ) ? (this.value.length) : 20;
+		};
+		input1.onkeypress = input1.onkeydown = function() {
+	    	this.size = ( this.value.length > 20 ) ? this.value.length : 20;
+		};
+		$(".toggle-button").click(function(){
+			$("nav").addClass("clicked");
+		});
+		// $(".move-back-button").click(moveToCMU);
+		// $(".move-back-button-mobile").click(moveToCMU);
+		function showFromTo(){
+			var from = $("#FromLocation").val();
+			var to = $("#ToLocation").val();
+			$(".show-from").html("From: "+from);
+			$(".show-to").html("To: "+to);
+		}
+		function showFind(){
+			$("nav").addClass("clicked");
+			$("div.navbar-collapse.collapse").addClass("in");
+		}
+		function hideFind(){
+			$("nav").removeClass("clicked");
+			$("div.navbar-collapse.collapse").removeClass("in");
+		}
+		// function moveToCMU(){
+		// 	var center = new google.maps.LatLng(40.442904891706505, -79.94276292620043);
+		// 	map.panTo(center);
+		// 	map.setZoom(17);
+		// }
+	</script>
+
+</html>
