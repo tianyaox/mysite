@@ -1,0 +1,111 @@
+.svg-as-filter{
+	display: none;
+}
+.clearfloat{
+	clear:both;
+}
+
+a.btn{
+	color: #bdc3c7;
+	border: 1px solid #bdc3c7;
+	border-radius: 5px;
+	background: white;
+	width: 70%;
+	display: block;
+	text-align: center;
+	margin-bottom: 5px;
+	text-decoration: none;
+	padding: 0.4em;
+	transition: color 0.4s, border 0.4s;
+}
+
+a.btn:hover{
+	border: 1px solid black;
+	color: black;
+
+}
+
+
+div.work-present{
+	padding-top: 20px;
+}
+div.work-present section.work{
+	/*height: 350px;*/
+	line-height: 0px;
+	/*border-top: 1px solid;*/
+	/*border-bottom: 1px solid;*/
+	position: relative;
+	transition: background 0.5s;
+	
+	/*1dd2af*/
+}
+
+
+div.work-present section.work:hover{
+	background: #1ABC9C;
+}
+
+div.work-present section.work:hover div.wrap-work img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+}
+
+div.work-present section.work div.wrap-work{
+	height: 100%;
+	width: 960px;
+	margin: auto;
+	display: block;
+	padding-top: 48px;
+	padding-bottom: 40px;
+}
+
+div.work-present section.work div.wrap-work img{
+	float: left;
+	width: 600px;
+	cursor: pointer;
+	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
+
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(#greyscale);
+	filter: gray;
+	transition: 0.5s;
+
+	/*border: 1px solid;*/
+}
+
+
+
+
+/*div.work-present section.work div.wrap-work img:hover{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+}*/
+
+div.work-present section.work div.wrap-work section.work1-intro{
+	padding-top: 8%;
+	width: 264px;
+	height: 100%;
+	float: right;
+}
+
+div.work-present section.work div.wrap-work section.work1-intro p{
+	line-height: normal;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+div.work-present section.work div.wrap-work section.work1-intro h2{
+	line-height: normal;
+	font-style: italic;
+	font-size: 1.5em;
+}
+
+div.work-present section.work div.wrap-work section.work1-intro a.btn{
+	line-height: normal;
+
+}
