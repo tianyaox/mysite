@@ -6,61 +6,123 @@
 }
 
 a.btn{
-	color: #bdc3c7;
-	border: 1px solid #bdc3c7;
+	/*color: #2c3e50;*/
+	/*color: #7f8c8d;*/
+	/*border: 1.5px solid #34495e;*/
+	color: #34495e;
+	border: 1.5px solid #34495e; /* silver */
 	border-radius: 5px;
-	background: white;
+
+	/*background: #2980b9;*/
 	width: 70%;
 	display: block;
 	text-align: center;
 	margin-bottom: 5px;
 	text-decoration: none;
 	padding: 0.4em;
-	transition: color 0.4s, border 0.4s;
+	/*transition: color 0.4s, border 0.4s;*/
 }
 
 a.btn:hover{
-	border: 1px solid black;
-	color: black;
+	/*border: 1px solid #2980b9;*/
+	/*color: white;*/
 
 }
 
+section.work-title1{
+	height: 60px;
+	text-align: center;
+	background: #ecf0f1;
+}
+
+
+section.work-title1 div.year1-wrap{
+	width: 60%;	
+	margin: auto;
+	display: block;
+	height: 100%;
+
+}
+
+
+section.work-title1 div.year1-wrap p.year1{
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+}
 
 div.work-present{
-	padding-top: 20px;
+	/*padding-top: 20px;*/
 }
-div.work-present section.work{
-	/*height: 350px;*/
+div.work-present section.work1{
+	/*height: 350px;
 	line-height: 0px;
 	/*border-top: 1px solid;*/
 	/*border-bottom: 1px solid;*/
 	position: relative;
-	transition: background 0.5s;
-	
-	/*1dd2af*/
-}
-
-
-div.work-present section.work:hover{
 	background: #1ABC9C;
+
+	/*green sea*/
+	/*background: #16a085;*/
+	transition: background 0.5s;
 }
 
-div.work-present section.work:hover div.wrap-work img{
+div.work-present section.work2{
+	position: relative;
+	/* orange */
+	background: #f39c12;
+	
+	/*carrot*/
+	/*background: #E67E22;*/
+
+	transition: background 0.5s;
+	height: 483px;
+	overflow: hidden;
+
+
+}
+
+
+
+
+div.work-present section.work1:hover{
+	background: #1dd2af;
+	/*light green sea*/
+	/*background: #19b698;*/
+}
+
+div.work-present section.work2:hover{
+	background: #f4a62a; /* light orange*/
+	/*light carrot*/
+	/*background: #e98b39; */
+
+}
+
+
+div.work-present section.work1:hover div.wrap-work img{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	filter: none;
 }
 
-div.work-present section.work div.wrap-work{
+div.work-present section.work2:hover div.wrap-work img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+}
+
+div.work-present section div.wrap-work{
 	height: 100%;
 	width: 960px;
 	margin: auto;
 	display: block;
 	padding-top: 48px;
 	padding-bottom: 40px;
+
 }
 
-div.work-present section.work div.wrap-work img{
+div.work-present section.work1 div.wrap-work img{
 	float: left;
 	width: 600px;
 	cursor: pointer;
@@ -77,6 +139,26 @@ div.work-present section.work div.wrap-work img{
 	/*border: 1px solid;*/
 }
 
+div.work-present section.work2 div.wrap-work img{
+	/*float: right;*/
+	position: absolute;
+	right: 158px;
+	width: 300px;
+	cursor: pointer;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(#greyscale1);
+	filter: gray;
+	transition: 0.5s;
+}
+
+div.work-present section.work2 div.wrap-work img.drum-page{
+	position: absolute;
+	right: 196px;
+	top: 140px;
+	width: 224px;
+}
+
 
 
 
@@ -86,26 +168,36 @@ div.work-present section.work div.wrap-work img{
 	filter: none;
 }*/
 
-div.work-present section.work div.wrap-work section.work1-intro{
+div.work-present section.work1 div.wrap-work section.work1-intro{
 	padding-top: 8%;
 	width: 264px;
 	height: 100%;
 	float: right;
 }
 
-div.work-present section.work div.wrap-work section.work1-intro p{
+div.work-present section.work2 div.wrap-work section.work2-intro{
+	padding-top: 8%;
+	width: 264px;
+	height: 100%;
+	float: left;
+}
+
+div.work-present section div.wrap-work section p{
 	line-height: normal;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
-div.work-present section.work div.wrap-work section.work1-intro h2{
+div.work-present section div.wrap-work section h2{
 	line-height: normal;
-	font-style: italic;
+	/*font-style: italic;*/
 	font-size: 1.5em;
 }
 
-div.work-present section.work div.wrap-work section.work1-intro a.btn{
+div.work-present section div.wrap-work section a.btn{
 	line-height: normal;
 
 }
+
+
+

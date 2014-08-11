@@ -1,17 +1,21 @@
-@header-font-color: black;
+// @header-font-color: #34495e;
+@header-font-color: white;
+
+@heaer-bg-color: #2c3e50;
 
 
 html, body{
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
 	// font-family: 'Ubuntu', sans-serif;
+	color: #34485e;
 }
 
 header{
-	
+	background: @heaer-bg-color;
 	height: 60px;
 	width: 100%;
-	border-bottom: 2px solid #bdc3c7;
+	border-bottom: 2px solid @heaer-bg-color;
 	a{
 		text-decoration: none;
 		color: @header-font-color;
@@ -54,7 +58,7 @@ header{
 					width: 0;
 					border-left: 5px solid transparent;
 					border-right: 5px solid transparent;
-					border-bottom: 5px solid #bdc3c7;
+					border-bottom: 5px solid @heaer-bg-color;
 					margin-left: 12px;
 					top: 55px;
 				}
