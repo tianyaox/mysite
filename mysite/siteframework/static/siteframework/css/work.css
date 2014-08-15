@@ -10,7 +10,7 @@ a.btn{
 	/*color: #7f8c8d;*/
 	/*border: 1.5px solid #34495e;*/
 	color: #34495e;
-	border: 1.5px solid #34495e; /* silver */
+	border: 1.5px solid #34495e;
 	border-radius: 5px;
 
 	/*background: #2980b9;*/
@@ -24,7 +24,7 @@ a.btn{
 }
 
 a.btn:hover{
-	/*border: 1px solid #2980b9;*/
+	border: 1px solid #3d566e;
 	/*color: white;*/
 
 }
@@ -50,6 +50,8 @@ section.work-title1 div.year1-wrap p.year1{
 	display: -webkit-box;
 	-webkit-box-pack: center;
 	-webkit-box-align: center;
+	font-style: italic;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
 div.work-present{
@@ -79,8 +81,6 @@ div.work-present section.work2{
 	transition: background 0.5s;
 	height: 483px;
 	overflow: hidden;
-
-
 }
 
 
@@ -100,11 +100,13 @@ div.work-present section.work2:hover{
 }
 
 
-div.work-present section.work1:hover div.wrap-work img{
+div.work-present section.work1:hover div.wrap-work img.KNOT-mycard{
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 	filter: none;
 }
+
+
 
 div.work-present section.work2:hover div.wrap-work img{
 	-webkit-filter: grayscale(0);
@@ -122,7 +124,7 @@ div.work-present section div.wrap-work{
 
 }
 
-div.work-present section.work1 div.wrap-work img{
+div.work-present section.work1 div.wrap-work img:first-of-type{
 	float: left;
 	width: 600px;
 	cursor: pointer;
@@ -130,12 +132,30 @@ div.work-present section.work1 div.wrap-work img{
 	/*position: absolute;*/
 	/*bottom: 0;*/
 
+/*	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: url(#greyscale);
+	filter: gray;*/
+	/*transition: 0.5s;*/
+
+	/*border: 1px solid;*/
+}
+
+div.work-present section.work1 div.wrap-work img.KNOT-mycard{
+	
+	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
+	/*position: absolute;*/
+	/*bottom: 0;*/
+	
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: url(#greyscale);
 	filter: gray;
 	transition: 0.5s;
-
+	position: absolute;
+	width: 594px;
+	left: 163px;
+	top: 100px;
 	/*border: 1px solid;*/
 }
 
@@ -160,13 +180,6 @@ div.work-present section.work2 div.wrap-work img.drum-page{
 }
 
 
-
-
-/*div.work-present section.work div.wrap-work img:hover{
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	filter: none;
-}*/
 
 div.work-present section.work1 div.wrap-work section.work1-intro{
 	padding-top: 8%;
@@ -198,6 +211,7 @@ div.work-present section div.wrap-work section a.btn{
 	line-height: normal;
 
 }
+
 
 
 

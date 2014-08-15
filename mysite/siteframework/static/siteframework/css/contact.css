@@ -1,0 +1,51 @@
+div.clearfloat{
+	clear: both;
+}
+div.contact-info{
+	width: 100%;
+	text-align: center;
+}
+section.contact-wrap{
+	height: 100%;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+	display: block;
+	padding-top: 20%;
+	
+}
+
+section.intro-left{
+	float: left;
+	margin-left: 20px;
+}
+section.intro-left p{
+	
+}
+section.intro-left p:before{
+	content: "\2022";
+}
+
+section.intro-mid{
+	/*float:left;*/
+	color: #7f8c8d;
+	text-align: left;
+	float: left;
+	margin-left: 40%;
+	/*display: inline-block;*/
+}
+
+section.intro-right{
+	/*float:right;*/
+	color: #3498db;
+	text-align: left;
+
+	/*display: inline-block;*/
+	float: right;
+
+}
+
+section.intro-right a{
+	text-decoration: none;
+	color: #3498db;
+}

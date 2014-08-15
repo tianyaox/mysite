@@ -21,7 +21,7 @@
 		<div class="arrow-up"></div>
 		<div class="arrow-up-fill"></div>
 	</li>
-	<li><a href="#">contact</a></li>
+	<li><a href="{% url 'contact' %}">contact</a></li>
 
 </ul>
 {% endblock %}
@@ -41,8 +41,9 @@
 	<section class="work1">
 		<div class="wrap-work">
 			<!-- <img src="{% static 'siteframework/img/img_trans.gif' %}" alt="KNOT Present Pic"> -->
-			<img src="{% static 'siteframework/img/KNOT_browser_green_600_white.png' %}" alt="KNOT Present Pic">
-			<!-- <img src="{% static 'siteframework/img/KNOT_mycard.png' %}" alt="KNOT Present Pic"> -->
+			<!-- <img src="{% static 'siteframework/img/KNOT_browser_green_600_white.png' %}" alt="KNOT Present Pic"> -->
+			<img src="{% static 'siteframework/img/line_browser_blue.png' %}" alt="line browser">
+			<img class="KNOT-mycard" src="{% static 'siteframework/img/KNOT_mycard.png' %}" alt="KNOT Present Pic">
 
 			<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
 				<filter id="greyscale1">

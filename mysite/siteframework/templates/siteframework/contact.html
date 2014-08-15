@@ -1,0 +1,54 @@
+{% extends "siteframework/base.html" %}
+
+{% block title %}Contact Page{% endblock %}
+
+{% block extracss %}
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'siteframework/css/contact.css' %}" type="text/css">
+
+{% endblock %}
+
+{% block nav %}
+<ul>
+	<li>
+		<a href="{% url 'home' %}">home</a>
+
+	</li>
+	<li>
+		<a href="{% url 'work' %}">work</a>
+	</li>
+	<li>
+		<a href="{% url 'contact' %}">contact</a>
+		<div class="arrow-up"></div>
+		<div class="arrow-up-fill"></div>
+	</li>
+
+</ul>
+{% endblock %}
+
+{% block main %}
+
+<div class="contact-info">
+	<section class="contact-wrap">
+		<section class="intro-left">
+			<p>tianyao xu</p>
+
+		</section>
+		<section class="intro-mid">
+			<p>City</p>
+			<p>Email</p>
+			<p>Github</p>
+
+		</section>
+		<section class="intro-right">
+			<p>Chicago, IL</p>
+
+			<p><a href="mailto:t.y.xu.cmu@gmail.com">t.y.xu.cmu@gmail.com</a></p>
+			<p><a href="https://github.com/tianyaox">tianyaox</a></p>
+		</section>
+		<div class="clearfloat"></div>
+	</section>
+</div>
+
+{% endblock %}
