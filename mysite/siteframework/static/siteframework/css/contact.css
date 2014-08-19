@@ -20,11 +20,33 @@ section.intro-left{
 	margin-left: 20px;
 }
 section.intro-left p{
-	
+
 }
 section.intro-left p:before{
 	content: "\2022";
+	margin-right: 5px;
+	font-size: 1.2em;
+	vertical-align: middle;
+	-webkit-animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
+    animation: colorchange 5s infinite;
 }
+
+@-webkit-keyframes colorchange{
+	0% { color: #d35400; }
+	25% {color: #f39c12;}
+	50% {color: #27ae60;}
+	75% {color: #2980b9;}
+	100% {color: #8e44ad;}
+}
+
+keyframes colorchange{
+	0% { color: #d35400; }
+	25% {color: #f39c12;}
+	50% {color: #27ae60;}
+	75% {color: #2980b9;}
+	100% {color: #8e44ad;}
+}
+
 
 section.intro-mid{
 	/*float:left;*/

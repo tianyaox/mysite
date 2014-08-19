@@ -63,7 +63,10 @@ div.work-present section.work1{
 	/*border-top: 1px solid;*/
 	/*border-bottom: 1px solid;*/
 	position: relative;
-	background: #1ABC9C;
+	/*background: #1ABC9C;*/
+	/*background: white;*/
+	background: #ecf0f1;
+	
 
 	/*green sea*/
 	/*background: #16a085;*/
@@ -73,7 +76,9 @@ div.work-present section.work1{
 div.work-present section.work2{
 	position: relative;
 	/* orange */
-	background: #f39c12;
+	/*background: #f39c12;*/
+	/*background: white;*/
+	background: #ecf0f1;
 	
 	/*carrot*/
 	/*background: #E67E22;*/
