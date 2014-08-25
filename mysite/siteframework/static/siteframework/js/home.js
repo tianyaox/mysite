@@ -1,42 +1,80 @@
-var w = window.screen.width, h = window.screen.height;
+var w = window.screen.width, h = window.screen.height*2/3;
 
 var labelDistance = 0;
 
-var vis = d3.select("body").append("svg:svg").attr("width", w).attr("height", h);
+var vis = d3.select(".home-graph").append("svg:svg").attr("width", w).attr("height", h);
 
 var nodes = [];
 var labelAnchors = [];
 var labelAnchorLinks = [];
 var links = [];
 
-for(var i = 0; i < 30; i++) {
-var node = {
-	label : "node " + i
-};
-nodes.push(node);
-labelAnchors.push({
-	node : node
-});
-labelAnchors.push({
-	node : node
-});
-};
+var wordArr1 = ["django","python","javascript","css3","html5","ajax","sql"];
+var wordArr2 = ["node.js","javascript","css3","html5","phonegap","mongodb"];
+var wordArr3 = ["d3","java","c"];
+
+
+for (var i =0;i<wordArr1.length;i++){
+	var node = {label:wordArr1[i]};
+	nodes.push(node);
+	labelAnchors.push({
+		node : node
+	});
+	labelAnchors.push({
+		node : node
+	});		
+}
+
+for (var i =0;i<wordArr2.length;i++){
+	var node = {label:wordArr2[i]};
+	nodes.push(node);
+	labelAnchors.push({
+		node : node
+	});
+	labelAnchors.push({
+		node : node
+	});		
+}
+
+for (var i =0;i<wordArr3.length;i++){
+	var node = {label:wordArr3[i]};
+	nodes.push(node);
+	labelAnchors.push({
+		node : node
+	});
+	labelAnchors.push({
+		node : node
+	});		
+}
+
 
 for(var i = 0; i < nodes.length; i++) {
-for(var j = 0; j < i; j++) {
-	if(Math.random() > .95)
-		links.push({
-			source : i,
-			target : j,
-			weight : Math.random()
-		});
-}
-labelAnchorLinks.push({
-	source : i * 2,
-	target : i * 2 + 1,
-	weight : 1
-});
+	labelAnchorLinks.push({
+		source : i * 2,
+		target : i * 2 + 1,
+		weight : 1
+	});
 };
+
+// var linksToBePushed = [[1,2],[2,3],[3,4],[4,5],[3,4],[4,5],[5,9],[9,10]];
+
+for (var i=0;i<wordArr1.length-1;i++){
+	links.push({
+		source: i,
+		target: i+1,
+		weight: 1
+	});
+}
+
+for (var i=0;i<wordArr2.length-1;i++){
+	links.push({
+		source: wordArr1.length+i,
+		target: wordArr1.length+i+1,
+		weight: 1
+	});
+}
+
+
 
 var force = d3.layout.force().size([w, h]).nodes(nodes).links(links).gravity(1).linkDistance(50).charge(-3000).linkStrength(function(x) {
 return x.weight * 10
@@ -61,7 +99,7 @@ var anchorNode = vis.selectAll("g.anchorNode").data(force2.nodes()).enter().appe
 anchorNode.append("svg:circle").attr("r", 0).style("fill", "#FFF");
 anchorNode.append("svg:text").text(function(d, i) {
 return i % 2 == 0 ? "" : d.node.label
-}).style("fill", "#555").style("font-family", "Arial").style("font-size", 12);
+}).style("fill", "#555").style("font-family", "Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif").style("font-size", 12);
 
 var updateLink = function() {
 this.attr("x1", function(d) {

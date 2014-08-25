@@ -1,0 +1,43 @@
+{% extends "siteframework/base.html" %}
+
+{% block title %}Knot Gallery{% endblock %}
+
+{% block extracss %}
+
+{% load staticfiles %}
+
+<link rel="stylesheet" href="{% static 'siteframework/css/knotgallery.css' %}" type="text/css">
+
+{% endblock %}
+
+
+{% block main %}
+
+<div class="knot-gallery">
+	<section class="knot-gallery-row">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_login.png'%}" alt="Band_login.png">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_guitar.png'%}" alt="Band_guitar.png">
+	</section>
+	<section class="knot-gallery-row"> 
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_drum.png'%}" alt="Band_drum.png">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_bass.png'%}" alt="Band_bass.png">
+	</section>
+
+</div>
+
+
+<div class= "back-to-work-button">
+	<a href="{% url 'work' %}"><- Back To Work Page</a>
+</div>
+
+
+{% endblock %}
+
+
+{% block extrajs %}
+
+{% load staticfiles %}
+
+<!-- <script src="{% static 'siteframework/js/home.js'%}" type="text/javascript"></script> -->
+
+{% endblock %}

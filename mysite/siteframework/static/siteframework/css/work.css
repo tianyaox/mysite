@@ -65,8 +65,10 @@ div.work-present section.work1{
 	position: relative;
 	/*background: #1ABC9C;*/
 	/*background: white;*/
-	background: #ecf0f1;
+	/*background: #ecf0f1;*/
+	background: #1dd2af;
 	
+
 
 	/*green sea*/
 	/*background: #16a085;*/
@@ -91,18 +93,18 @@ div.work-present section.work2{
 
 
 
-div.work-present section.work1:hover{
-	background: #1dd2af;
+/*div.work-present section.work1:hover{*/
+	/*background: #1dd2af;*/
 	/*light green sea*/
 	/*background: #19b698;*/
-}
+/*}*/
 
-div.work-present section.work2:hover{
-	background: #f4a62a; /* light orange*/
+/*div.work-present section.work2:hover{*/
+	/*background: #f4a62a;*/ /* light orange*/
 	/*light carrot*/
 	/*background: #e98b39; */
 
-}
+/*}*/
 
 
 div.work-present section.work1:hover div.wrap-work img.KNOT-mycard{
@@ -130,7 +132,8 @@ div.work-present section div.wrap-work{
 }
 
 div.work-present section.work1 div.wrap-work img:first-of-type{
-	float: left;
+	/*float: left;*/
+	left: 163px;
 	width: 600px;
 	cursor: pointer;
 	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
@@ -151,7 +154,7 @@ div.work-present section.work1 div.wrap-work img.KNOT-mycard{
 	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
 	/*position: absolute;*/
 	/*bottom: 0;*/
-	
+	cursor: pointer;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: url(#greyscale);

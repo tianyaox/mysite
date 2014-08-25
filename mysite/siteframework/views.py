@@ -11,6 +11,13 @@ def work(request):
 def contact(request):
 	return render(request, 'siteframework/contact.html')
 
+def knotgallery(request):
+	return render(request, 'siteframework/knotgallery.html')
+
+def bandgallery(request):
+	return render(request, 'siteframework/bandgallery.html')
+
+
 def cmumap(request):
 	return render(request,'siteframework/cmumap.html')
 

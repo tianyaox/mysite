@@ -1,0 +1,34 @@
+.knot-gallery{
+	width: 50%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 20px;
+
+}
+
+.knot-gallery-row{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.knot-gallery-pic{
+	width: 49%;
+
+}
+
+.back-to-work-button{
+	margin: auto;
+	width: 50%;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	padding-bottom: 50px;
+}
+
+.back-to-work-button a{
+	text-decoration: none;
+	color: #2c3e50;
+	float: right;
+	font-size: 1.0em;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style: italic;
+}
