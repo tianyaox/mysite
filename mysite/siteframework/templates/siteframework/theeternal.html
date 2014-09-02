@@ -3,12 +3,6 @@
 	<head>
 		<meta charset='UTF-8'>
 		<title>The Eternal</title>
-		{% comment %}
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js" type="text/javascript"></script>
-		{% load staticfiles %}
-		<script type="text/javascript" charset="utf-8" src="{% static 'siteframework/js/jquery.tubular.1.0.js' %}"></script> 
-		<script src="{% static 'siteframework/js/video.js' %}" type="text/javascript"></script>
-		{% endcomment %}
 		<link href='http://fonts.googleapis.com/css?family=Cedarville+Cursive' rel='stylesheet' type='text/css'>
 
 		{% load staticfiles %}
@@ -20,22 +14,49 @@
 	<body style="margin:0px;">
 		<div style="position: fixed; z-index: -99; width: 100%; height: 100%">
 		  <iframe frameborder="0" height="100%" width="100%" 
-		    src="https://youtube.com/embed/8kZMVG6N7DE?autoplay=1&controls=0&showinfo=0&autohide=1&disablekb=1&loop=1&modestbranding=1">
+		    src="https://youtube.com/embed/8kZMVG6N7DE?autoplay=1&controls=0&showinfo=0&autohide=1&disablekb=1&loop=1&modestbranding=1&start=0">
 		  </iframe>
 		</div>
 		<div style="position: fixed; z-index: 0; width: 100%; height: 100%"></div>
 		<div id="text">
 			<p>"the eternal" &nbsp&nbsp&nbsp&nbsp</p>
-			<p>by <a href="">tianyaox</a>, 2014</p>			
+			<p>by <a href="https://github.com/tianyaox">tianyaox</a>, 2014</p>			
 		</div>
 		<div id="copyright">
-			<p><a href="" id="showcopyright">Copyright</a> | <a href="">how to</a></p>
-			<p id="copyrighttext">I do not own any of the resources used for developing this webpage, including the Youtube video "" by <a href=""></a> and the soundtrack by Nick Drake. Thanks.</p>
+			<p><a href="#" id="showcopyright">Copyright</a> | <a href="https://github.com/tianyaox/theeternal">how to</a></p>
 		
 		</div>
-		<div>
+
+		<div id="copyrighttext">
+			<p>I do not own any of the resources used for developing this webpage, including the Youtube video "NICK DRAKE Essential Songs" by <a href="https://www.youtube.com/user/ArtMorpheus">ArtMorpheus</a> and the soundtrack by Nick Drake. Thanks.</p>
 			
 		</div>
+		
+		<div id="share">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-text="The eternal">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+		</div>
+
+
+		{% load staticfiles %}
+		<script src="{% static 'siteframework/js/jquery-1.11.1.js' %}" type="
+		text/javascript"></script>
+		<script>
+			$(document).ready(function(){
+				$("#showcopyright").click(function(){
+					if ($("#copyrighttext").css("display")=="none"){
+						// $("#copyrighttext").css("display","block");
+						$("#copyrighttext").fadeIn();
+					}
+					else if ($("#copyrighttext").css("display")=="block"){
+						// $("#copyrighttext").css("display","none");
+						$("#copyrighttext").fadeOut();
+					}
+				});
+			});
+		</script>
+
 	</body>
 
 </html>

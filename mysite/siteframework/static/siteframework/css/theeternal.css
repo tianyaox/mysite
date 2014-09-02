@@ -12,7 +12,7 @@ a{
 	font-family: 'Cedarville Cursive', cursive; 
 	color:#fff; 
 	opacity: 0.6;
-	transition: 0.3s;
+	/*transition: 0.3s;*/
 }
 
 @-webkit-keyframes opacitychange{
@@ -26,8 +26,8 @@ a{
 }
 
 #text:hover{
-	-webkit-animation: none;
-	opacity: 0.6;
+	/*-webkit-animation: none;*/
+	/*opacity: 0.6;*/
 }
 
 #text p{
@@ -56,13 +56,22 @@ a{
 }
 
 #copyrighttext{
+	position:absolute; 
+	z-index: 1; 
+	right: 15%; 
+	top: 55%; 
+	font-family: 'Cedarville Cursive', cursive; 
+	color:#fff; 
+	opacity: 0.6; 
+	font-size:0.8em;
 	display: none;
-	width:100px;
-	transition: 0.3s;
+	width:150px;
+	text-align: right;
 }
 
-#showcopyright:hover ~ #copyrighttext{
-	display: block;
-		
+#share{
+	position: absolute;
+	left: 2%;
+	bottom: 4%;
 }
 
