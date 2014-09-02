@@ -1,0 +1,14 @@
+{
+	"nodes": [
+		{"name":"html5","group":1},
+		{"name":"css3","group":1},
+		{"name":"javascript","group":1},
+		{"name":"django","group":2},
+	],
+	"links":[
+		{"source":1,"target":0,"value":1},
+		{"source":2,"target":0,"value":1},
+		{"source":3,"target":0,"value":1},
+	]
+
+}

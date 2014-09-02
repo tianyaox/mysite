@@ -21,3 +21,5 @@ def bandgallery(request):
 def cmumap(request):
 	return render(request,'siteframework/cmumap.html')
 
+def theeternal(request):
+	return render(request,'siteframework/theeternal.html')

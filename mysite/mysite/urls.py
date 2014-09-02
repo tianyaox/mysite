@@ -13,6 +13,7 @@ urlpatterns = patterns('',
     url(r'^contact/$', 'siteframework.views.contact', name='contact'),  
     url(r'^knotgallery/$', 'siteframework.views.knotgallery', name='knotgallery'),  
     url(r'^bandgallery/$', 'siteframework.views.bandgallery', name='bandgallery'),  
+    url(r'^theeternal/$', 'siteframework.views.theeternal', name='theeternal'),  
     url(r'^admin/', include(admin.site.urls)),
     # url(r'^cmumap$', 'siteframework.views.cmumap', name='cmumap'),
 )

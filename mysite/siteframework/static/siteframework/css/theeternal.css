@@ -1,0 +1,68 @@
+a{
+	text-decoration: none;
+	color: #fff;
+}
+#text{
+	-webkit-animation: opacitychange 7s infinite;
+	animation: opacitychange 7s infinite;
+	position:absolute; 
+	z-index: 1; 
+	right: 15%; 
+	top: 40%; 
+	font-family: 'Cedarville Cursive', cursive; 
+	color:#fff; 
+	opacity: 0.6;
+	transition: 0.3s;
+}
+
+@-webkit-keyframes opacitychange{
+	0%{ opacity:0.6;}
+	50% {opacity: 0.1;}
+}
+
+@keyframes opacitychange{
+	0%{ opacity:0.6;}
+	50% {opacity: 0.1;}
+}
+
+#text:hover{
+	-webkit-animation: none;
+	opacity: 0.6;
+}
+
+#text p{
+	margin: 0;
+	display: inline-block;
+
+}
+#text p:first-of-type{
+	font-size: 1.5em;
+	display: inline-block;
+
+}
+
+#copyright{
+	position:absolute; 
+	z-index: 1; 
+	right: 15%; 
+	top: 50%; 
+	font-family: 'Cedarville Cursive', cursive; 
+	color:#fff; opacity: 0.2; 
+	font-size:0.8em;
+	transition: 0.3s;
+}
+#copyright:hover{
+	opacity: 0.6;
+}
+
+#copyrighttext{
+	display: none;
+	width:100px;
+	transition: 0.3s;
+}
+
+#showcopyright:hover ~ #copyrighttext{
+	display: block;
+		
+}
+
