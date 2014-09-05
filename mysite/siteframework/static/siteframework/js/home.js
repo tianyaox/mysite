@@ -1,4 +1,4 @@
-var w = window.screen.width, h = window.screen.height*2/3;
+var w = $(window).width(), h = $(window).height()*2/3;
 
 
 // var color = d3.scale.category20();

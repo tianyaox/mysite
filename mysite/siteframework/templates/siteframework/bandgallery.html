@@ -10,6 +10,21 @@
 
 {% endblock %}
 
+{% block nav %}
+<ul>
+	<li>
+		<a href="{% url 'home' %}">home</a>
+
+	</li>
+	<li class="active">
+		<a href="{% url 'work' %}">work</a>
+		<div class="arrow-up"></div>
+		<div class="arrow-up-fill"></div>
+	</li>
+	<li><a href="{% url 'contact' %}">contact</a></li>
+
+</ul>
+{% endblock %}
 
 {% block main %}
 

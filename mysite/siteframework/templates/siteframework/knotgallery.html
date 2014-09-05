@@ -11,24 +11,51 @@
 {% endblock %}
 
 
-{% block main %}
+{% block nav %}
+<ul>
+	<li>
+		<a href="{% url 'home' %}">home</a>
 
+	</li>
+	<li class="active">
+		<a href="{% url 'work' %}">work</a>
+		<div class="arrow-up"></div>
+		<div class="arrow-up-fill"></div>
+	</li>
+	<li><a href="{% url 'contact' %}">contact</a></li>
+
+</ul>
+{% endblock %}
+
+{% block main %}
+<section class="KNOT-intro">
+	<div class="KNOT-intro-wrap">
+		<p>Knot is a web application built with Django framework, which I worked on in 2013, together with my two other classmates in CMU. It is a digital namecard social network that allows users to keep its own namecard and exchange namecard with others. </p>
+		<br>
+		<p>I was in charge of both backend and frontend work in this project, including designing/ implementing the UI for most of the pages, writing code for Django models, part of the views and most of the templates. The code contained python, HTML5, CSS3, Less and loads of javascript for ajax and animation. By writing Django models, the database structure was designed. By writing Django templates, I helped my partners to connect the backend code and frontend code smoothly. </p>
+		
+
+<!-- 		<div class= "back-to-work-button">
+			<a href="{% url 'work' %}"><- Back To Work Page</a>
+		</div> -->
+	</div>
+</section>
 <div class="knot-gallery">
 	<section class="knot-gallery-row">
 		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_login.png'%}" alt="KNOT_login.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_timeline.png'%}" alt="KNOT_timeline.png">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_notification.png'%}" alt="KNOT_login.png">
+
 	</section>
 	<section class="knot-gallery-row"> 
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_notification.png'%}" alt="KNOT_login.png">
 		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_mycard.png'%}" alt="KNOT_timeline.png">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_timeline.png'%}" alt="KNOT_timeline.png">
+
 	</section>
 
 </div>
 
 
-<div class= "back-to-work-button">
-	<a href="{% url 'work' %}"><- Back To Work Page</a>
-</div>
+
 
 {% endblock %}
 

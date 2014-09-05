@@ -9,8 +9,10 @@ a.btn{
 	/*color: #2c3e50;*/
 	/*color: #7f8c8d;*/
 	/*border: 1.5px solid #34495e;*/
-	color: #34495e;
-	border: 1.5px solid #34495e;
+	/*color: #34495e;*/
+	/*color: #181818;*/
+	color: #ecf0f1;
+	border: 1.5px solid #ecf0f1;
 	border-radius: 5px;
 
 	/*background: #2980b9;*/
@@ -24,7 +26,7 @@ a.btn{
 }
 
 a.btn:hover{
-	border: 1px solid #3d566e;
+	/*border: 1px solid #3d566e;*/
 	/*color: white;*/
 
 }
@@ -33,6 +35,11 @@ section.work-title1{
 	height: 60px;
 	text-align: center;
 	background: #ecf0f1;
+	/*background: #ddd;*/
+	/*background: #666;*/
+	/*color: #bebebe;*/
+	/*color: #aaa;*/
+	color: black;
 }
 
 
@@ -54,57 +61,36 @@ section.work-title1 div.year1-wrap p.year1{
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-div.work-present{
-	/*padding-top: 20px;*/
-}
+
 div.work-present section.work1{
-	/*height: 350px;
-	line-height: 0px;
-	/*border-top: 1px solid;*/
-	/*border-bottom: 1px solid;*/
 	position: relative;
-	/*background: #1ABC9C;*/
-	/*background: white;*/
-	/*background: #ecf0f1;*/
-	background: #1dd2af;
-	
+	background: #ccc;
+	/*color: #bebebe;*/
 
-
-	/*green sea*/
-	/*background: #16a085;*/
 	transition: background 0.5s;
 }
 
 div.work-present section.work2{
 	position: relative;
-	/* orange */
-	/*background: #f39c12;*/
-	/*background: white;*/
-	background: #ecf0f1;
-	
-	/*carrot*/
-	/*background: #E67E22;*/
+	/*color: #ccc;*/
+	/*background: #666;*/
+	background: #ccc;
 
 	transition: background 0.5s;
-	height: 483px;
+	height: 508px;
 	overflow: hidden;
+	/*color: #bebebe;*/
+
+}
+
+section.work3{
+	/*background: #666;*/
+	background: #ccc;
+	transition: background 0.5s;
+
 }
 
 
-
-
-/*div.work-present section.work1:hover{*/
-	/*background: #1dd2af;*/
-	/*light green sea*/
-	/*background: #19b698;*/
-/*}*/
-
-/*div.work-present section.work2:hover{*/
-	/*background: #f4a62a;*/ /* light orange*/
-	/*light carrot*/
-	/*background: #e98b39; */
-
-/*}*/
 
 
 div.work-present section.work1:hover div.wrap-work img.KNOT-mycard{
@@ -126,65 +112,59 @@ div.work-present section div.wrap-work{
 	width: 960px;
 	margin: auto;
 	display: block;
-	padding-top: 48px;
-	padding-bottom: 40px;
+	padding-top: 60px;
+	padding-bottom: 80px;
 
 }
 
-div.work-present section.work1 div.wrap-work img:first-of-type{
-	/*float: left;*/
-	left: 163px;
-	width: 600px;
-	cursor: pointer;
-	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
-	/*position: absolute;*/
-	/*bottom: 0;*/
+section.work2 div.wrap-work .mobile{
+	margin-right: 80px;
+}
+div.work-present section.work2 div.wrap-work{
+	padding-bottom: 10px;
+}
 
-/*	-webkit-filter: grayscale(100%);
+section.work2 div.wrap-work .work2-intro{
+	margin-left: 10px;
+
+}
+
+div.work3-browser img{
+	cursor: pointer;
+	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: url(#greyscale);
-	filter: gray;*/
-	/*transition: 0.5s;*/
-
-	/*border: 1px solid;*/
+	filter: gray;
+	transition: 0.5s;	
 }
 
+section.work3:hover div.wrap-work .work3-browser img{
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
+}
 div.work-present section.work1 div.wrap-work img.KNOT-mycard{
 	
-	/*background: url(/static/siteframework/img/KNOT_browser_green_600_white.png) 0 0;*/
-	/*position: absolute;*/
-	/*bottom: 0;*/
+
 	cursor: pointer;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: url(#greyscale);
 	filter: gray;
 	transition: 0.5s;
-	position: absolute;
-	width: 594px;
-	left: 163px;
-	top: 100px;
-	/*border: 1px solid;*/
+
 }
 
 div.work-present section.work2 div.wrap-work img{
-	/*float: right;*/
-	position: absolute;
-	right: 158px;
-	width: 300px;
+
+	width: 250px;
 	cursor: pointer;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	filter: url(#greyscale1);
 	filter: gray;
 	transition: 0.5s;
-}
-
-div.work-present section.work2 div.wrap-work img.drum-page{
-	position: absolute;
-	right: 196px;
-	top: 140px;
-	width: 224px;
+	float: right;
 }
 
 
@@ -198,28 +178,150 @@ div.work-present section.work1 div.wrap-work section.work1-intro{
 
 div.work-present section.work2 div.wrap-work section.work2-intro{
 	padding-top: 8%;
-	width: 264px;
-	height: 100%;
+	width: 300px;
+	/*height: 508px;*/
 	float: left;
+
 }
 
 div.work-present section div.wrap-work section p{
-	line-height: normal;
+	line-height: 1.8em;
 	margin-top: 5px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
+	color: #ecf0f1;
+
 }
 
 div.work-present section div.wrap-work section h2{
-	line-height: normal;
-	/*font-style: italic;*/
+	line-height: 1.8em;
 	font-size: 1.5em;
+	color: white;
 }
 
 div.work-present section div.wrap-work section a.btn{
 	line-height: normal;
+}
+
+.browser{
+	float: left;
+}
+
+.browserbar{
+	background-color: #383838;
+	width: 100%;
+	height: 20px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+
+.browserbtn{
+    display: inline-block;
+	color: #bebebe;
+
+}
+.browserbtn:first-of-type{
+	margin-left: 10px;
+}
+.browserbtn:before {
+
+    content: ' \25CF';
+    font-size: 12px;
+}
+
+.mobile{
+	/*position: absolute;*/
+	/*right: -5%;*/
+	/*top: 15%;	*/
+	float: right;
+	position: relative;
+	color: black;
+}
+.mobilecontent{
+	line-height: 0px;
+}
+.mobile .mobilecontent img{
+	width: 165px;
+	/*float: right;*/
+	padding: 0px 10px 0px 10px;
+	background-color: #383838;
 
 }
 
+.mobilecamera:before{
+	content: ' \25CF';
+    font-size: 18px;
+}
+
+.mobilecamera{
+	/*margin:20px;*/
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	text-align: center;
+	background-color: #383838;
+	height: 30px;
+}
+
+.mobileearphone{
+	content: ' ';
+	display: block;
+	background-color: #383838;
+	width: 100%;
+	height: 25px;
+	/*margin: 10px;*/
+	color:black;
+
+	/*border: 10px solid ;*/
+	/*overflow: hidden;*/
+}
+
+.mobilesensor:before{
+	content: ' \25CF';
+    font-size: 12px;
+}
+.mobileear{
+	width:20%;
+	height: 6px;
+	display: block;
+	background-color: black;
+	position: absolute;
+	left: 40%;
+	top: 8%;
+	border-radius: 3px;
+}
+
+.mobilesensor{
+	position: absolute;
+	left: 30%;
+	top: 6.5%;
+}
+
+.mobilehomebuttonpart{
+
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background-color: #383838;
+}
+
+.mobilehomebutton:before{
+	content: ' \25CF';
+    font-size: 50px;
 
 
+}
+.mobilehomebutton{
+	text-align: center;
+}
 
+.work3-intro{
+	float: left;
+}
+.work3-browser{
+	float: right;
+}
+
+.work3-intro{
+	padding-top: 8%;
+	width: 264px;
+	height: 100%;
+	float: left;
+}

@@ -3,3 +3,20 @@
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 	
 }
+
+.recent{
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	text-align: center;
+	font-style: italic;
+
+}
+
+.recent a{
+	text-decoration: none;	
+}
+
+.main-title{
+	background: #ccc;
+	padding-bottom: 100px;
+
+}

@@ -1,5 +1,5 @@
 .knot-gallery{
-	width: 50%;
+	width: 75%;
 	margin: auto;
 	overflow: hidden;
 	margin-top: 20px;
@@ -11,6 +11,10 @@
 	margin-bottom: 20px;
 }
 
+.knot-gallery-row img{
+	box-shadow: 5px 5px;
+}
+
 .knot-gallery-pic{
 	width: 49%;
 
@@ -18,9 +22,9 @@
 
 .back-to-work-button{
 	margin: auto;
-	width: 50%;
+	/*width: 50%;*/
 	margin-top: 40px;
-	margin-bottom: 50px;
+	/*margin-bottom: 50px;*/
 	padding-bottom: 50px;
 }
 
@@ -28,7 +32,38 @@
 	text-decoration: none;
 	color: #2c3e50;
 	float: right;
-	font-size: 1.0em;
-	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-	font-style: italic;
+	/*font-size: 1.0em;*/
+	/*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+	/*font-style: italic;*/
 }
+
+.KNOT-intro{
+	text-align: center;
+	/*height: 60px;*/
+	/*background: #ecf0f1;*/
+	color: black;
+
+}
+
+.KNOT-intro-wrap{
+	padding: 20px 0 20px 0;
+	width: 73%;
+	margin:auto;
+	display: block;
+	height: 100%;
+	line-height: normal;
+	font-style: italic;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.KNOT-intro-wrap p{
+	line-height: 1.5em;
+	
+	text-align: left;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+}
+	

@@ -16,7 +16,7 @@
 		<a href="{% url 'home' %}">home</a>
 
 	</li>
-	<li>
+	<li class="active">
 		<a href="{% url 'work' %}">work</a>
 		<div class="arrow-up"></div>
 		<div class="arrow-up-fill"></div>
@@ -31,6 +31,47 @@
 <div class="work-present">
 	<!-- <section><img src="../../static/siteframework/img/KNOT_timeline.png" alt="KNOT Present Pic"></section> -->
 	{% load staticfiles %}
+	<section class="work-title1">
+		<div class="year1-wrap">
+			<p class="year1">2014: Django, python, SQL, Google Maps API, javascript, HTML5, CSS3</p>
+			<!-- <p></p> -->
+		</div>
+	</section>
+	<section class="work3">
+		<div class="wrap-work">
+			<section class="work3-intro">
+				<h2 class="work3-title">CMU Route Finder</h2>
+				<p>A web application that helps students find their way in the complex buildings in CMU.</p>
+				<a class="btn" href="#">Demo intro page</a>
+				<a class="btn" href="{% url 'knotgallery' %}">Gallery</a>
+
+			</section>
+
+
+
+			<div class="work3-browser">
+				<div class="browserbar">
+					<div class="browserbtn"></div>
+					<div class="browserbtn"></div>
+					<div class="browserbtn"></div>
+				</div>
+				<img class="" src="{% static 'siteframework/img/wayfinder.png' %}" alt="Wayfinder Present Pic" onclick="location.href='{% url 'knotgallery' %}'">
+
+				<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<filter id="greyscale1">
+						<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
+															0.3333 0.3333 0.3333 0 0
+															0.3333 0.3333 0.3333 0 0
+															0 0 0 1 0" />
+					</filter>
+				</svg>
+			</div>
+
+			<div class="clearfloat"></div>
+		</div>
+	</section>
+
+
 
 	<section class="work-title1">
 		<div class="year1-wrap">
@@ -42,17 +83,24 @@
 		<div class="wrap-work">
 			<!-- <img src="{% static 'siteframework/img/img_trans.gif' %}" alt="KNOT Present Pic"> -->
 			<!-- <img src="{% static 'siteframework/img/KNOT_browser_green_600_white.png' %}" alt="KNOT Present Pic"> -->
-			<img src="{% static 'siteframework/img/line_browser_blue.png' %}" alt="line browser" onclick="location.href='{% url 'knotgallery' %}'">
-			<img class="KNOT-mycard" src="{% static 'siteframework/img/KNOT_mycard.png' %}" alt="KNOT Present Pic" onclick="location.href='{% url 'knotgallery' %}'">
+			<!-- <img src="{% static 'siteframework/img/line_browser_blue.png' %}" alt="line browser" onclick="location.href='{% url 'knotgallery' %}'"> -->
+			<div class="browser">
+				<div class="browserbar">
+					<div class="browserbtn"></div>
+					<div class="browserbtn"></div>
+					<div class="browserbtn"></div>
+				</div>
+				<img class="KNOT-mycard" src="{% static 'siteframework/img/KNOT_mycard_mid.png' %}" alt="KNOT Present Pic" onclick="location.href='{% url 'knotgallery' %}'">
 
-			<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<filter id="greyscale1">
-					<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
-														0.3333 0.3333 0.3333 0 0
-														0.3333 0.3333 0.3333 0 0
-														0 0 0 1 0" />
-				</filter>
-			</svg>
+				<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
+					<filter id="greyscale1">
+						<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
+															0.3333 0.3333 0.3333 0 0
+															0.3333 0.3333 0.3333 0 0
+															0 0 0 1 0" />
+					</filter>
+				</svg>
+			</div>
 
 			<section class="work1-intro">
 				<h2 class="work1-title">KNOT</h2>
@@ -68,18 +116,35 @@
 	<section class="work2">
 		<div class="wrap-work">
 			<!-- <img src="{% static 'siteframework/img/img_trans.gif' %}" alt="KNOT Present Pic"> -->
-			<img src="{% static 'siteframework/img/line-iphone.png' %}" alt="line-iphone" onclick="location.href='{% url 'bandgallery' %}'">
+			<!-- <img src="{% static 'siteframework/img/line-iphone.png' %}" alt="line-iphone" onclick="location.href='{% url 'bandgallery' %}'"> -->
 			<!-- <img src="{% static 'siteframework/img/KNOT_mycard.png' %}" alt="KNOT Present Pic"> -->
-			<img class="drum-page" src="{% static 'siteframework/img/drum.png' %}" alt="Drum page" onclick="location.href='{% url 'bandgallery' %}'">
+			
+			<div class="mobile">
+				<div class="mobilecamera"></div>
+				<div class="mobileearphone">
+					<div class="mobilesensor"></div>
+					<div class="mobileear"></div>
+					
+				</div>
+				<div class="mobilecontent">
+					<img class="drum-page" src="{% static 'siteframework/img/drum.png' %}" alt="Drum page" onclick="location.href='{% url 'bandgallery' %}'">
+					<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
+						<filter id="greyscale2">
+							<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
+																0.3333 0.3333 0.3333 0 0
+																0.3333 0.3333 0.3333 0 0
+																0 0 0 1 0" />
+						</filter>
+					</svg>
+				</div>
+				<div class="mobilehomebuttonpart">
+					<div class="mobilehomebutton"></div>
+				</div>
+				
+				
+			</div>
 
-			<svg class="svg-as-filter" version="1.1" xmlns="http://www.w3.org/2000/svg">
-				<filter id="greyscale2">
-					<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0
-														0.3333 0.3333 0.3333 0 0
-														0.3333 0.3333 0.3333 0 0
-														0 0 0 1 0" />
-				</filter>
-			</svg>
+
 
 			<section class="work2-intro">
 				<h2 class="work2-title">Band Online</h2>
