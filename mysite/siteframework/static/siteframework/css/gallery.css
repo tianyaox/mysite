@@ -1,0 +1,108 @@
+.knot-gallery, .band-gallery{
+	width: 75%;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 20px;
+
+}
+
+.knot-gallery-row, .band-gallery-row{
+	
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+
+img.knot-gallery-pic{
+	width: 45%;
+	box-shadow: 5px 5px;
+	margin: 2%;
+	-webkit-filter: grayscale(100%);
+	-webkit-transition:0.3s;
+}
+img.knot-gallery-pic:hover{
+	-webkit-filter: none;
+}
+
+img.band-gallery-pic{
+	width: 28%;
+	box-shadow: 5px 5px;
+	margin: 2%;	
+	-webkit-filter: grayscale(100%);
+	-webkit-transition:0.3s;
+}
+img.band-gallery-pic:hover{
+	-webkit-filter: none;
+
+}
+
+.back-to-work-button{
+	margin-top:10px;
+}
+
+.back-to-work-button a{
+	text-decoration: none;
+	color: #888;
+	text-align: center;
+	display: block;
+	margin: auto;
+	font-size: 0.5em;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-style: italic;
+	transition: 0.3s;
+}
+.back-to-work-button a:hover{
+	color: black;
+}
+
+.KNOT-intro{
+	text-align: center;
+	color: black;
+
+}
+
+.KNOT-intro-wrap{
+	padding: 20px 0 20px 0;
+	width: 73%;
+	margin:auto;
+	display: block;
+	height: 100%;
+	line-height: normal;
+	font-style: italic;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.KNOT-intro-wrap p{
+	line-height: 1.5em;
+
+	text-align: left;
+	height: 100%;
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+
+}
+
+.knot-gallery-title, .band-gallery-title{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	font-size: 1.5em;
+}
+
+.knot-gallery-title h1, .band-gallery-title h1{
+	margin: auto;
+	display: block;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align: center;
+	width: 11%;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+}
+
+.band-gallery-title h1, .map-gallery-title h1{
+	width: 20%;
+}
+
+	

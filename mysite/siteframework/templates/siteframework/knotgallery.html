@@ -6,7 +6,7 @@
 
 {% load staticfiles %}
 
-<link rel="stylesheet" href="{% static 'siteframework/css/knotgallery.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'siteframework/css/gallery.css' %}" type="text/css">
 
 {% endblock %}
 
@@ -28,22 +28,28 @@
 {% endblock %}
 
 {% block main %}
-<section class="KNOT-intro">
+<!-- <section class="KNOT-intro">
 	<div class="KNOT-intro-wrap">
 		<p>Knot is a web application built with Django framework, which I worked on in 2013, together with my two other classmates in CMU. It is a digital namecard social network that allows users to keep its own namecard and exchange namecard with others. </p>
 		<br>
 		<p>I was in charge of both backend and frontend work in this project, including designing/ implementing the UI for most of the pages, writing code for Django models, part of the views and most of the templates. The code contained python, HTML5, CSS3, Less and loads of javascript for ajax and animation. By writing Django models, the database structure was designed. By writing Django templates, I helped my partners to connect the backend code and frontend code smoothly. </p>
 		
 
-<!-- 		<div class= "back-to-work-button">
-			<a href="{% url 'work' %}"><- Back To Work Page</a>
-		</div> -->
+
 	</div>
-</section>
+</section> -->
+<div class="knot-gallery-title">
+	<h1>KNOT, 2013</h1>
+		<div class= "back-to-work-button">
+			<a href="{% url 'work' %}">Back To Work Page</a>
+		</div>
+</div>
+
+
 <div class="knot-gallery">
 	<section class="knot-gallery-row">
 		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_login.png'%}" alt="KNOT_login.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_notification.png'%}" alt="KNOT_login.png">
+		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_notification_chop.png'%}" alt="KNOT_login.png">
 
 	</section>
 	<section class="knot-gallery-row"> 
@@ -53,6 +59,8 @@
 	</section>
 
 </div>
+
+
 
 
 

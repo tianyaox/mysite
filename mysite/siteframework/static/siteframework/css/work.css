@@ -11,8 +11,9 @@ a.btn{
 	/*border: 1.5px solid #34495e;*/
 	/*color: #34495e;*/
 	/*color: #181818;*/
-	color: #ecf0f1;
-	border: 1.5px solid #ecf0f1;
+	/*color: #ecf0f1;*/
+	color: rgb(38,38,38);
+	border: 1.5px solid rgb(190,190,190);
 	border-radius: 5px;
 
 	/*background: #2980b9;*/
@@ -23,6 +24,7 @@ a.btn{
 	text-decoration: none;
 	padding: 0.4em;
 	/*transition: color 0.4s, border 0.4s;*/
+	background: rgb(190,190,190);
 }
 
 a.btn:hover{
@@ -35,10 +37,7 @@ section.work-title1{
 	height: 60px;
 	text-align: center;
 	background: #ecf0f1;
-	/*background: #ddd;*/
-	/*background: #666;*/
-	/*color: #bebebe;*/
-	/*color: #aaa;*/
+
 	color: black;
 }
 
@@ -84,10 +83,11 @@ div.work-present section.work2{
 }
 
 section.work3{
-	/*background: #666;*/
-	background: #ccc;
+	background: #555;
 	transition: background 0.5s;
-
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	filter: none;
 }
 
 
@@ -131,18 +131,9 @@ section.work2 div.wrap-work .work2-intro{
 
 div.work3-browser img{
 	cursor: pointer;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	filter: url(#greyscale);
-	filter: gray;
-	transition: 0.5s;	
+	transition: 0.5s;
 }
 
-section.work3:hover div.wrap-work .work3-browser img{
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-	filter: none;
-}
 div.work-present section.work1 div.wrap-work img.KNOT-mycard{
 	
 
@@ -188,13 +179,15 @@ div.work-present section div.wrap-work section p{
 	line-height: 1.8em;
 	margin-top: 5px;
 	margin-bottom: 15px;
-	color: #ecf0f1;
+	/*color: #ecf0f1;*/
+	color: rgb(190,190,190);
 
 }
 
 div.work-present section div.wrap-work section h2{
 	line-height: 1.8em;
 	font-size: 1.5em;
+	/*color: rgb(38,38,38);*/
 	color: white;
 }
 

@@ -6,7 +6,7 @@
 
 {% load staticfiles %}
 
-<link rel="stylesheet" href="{% static 'siteframework/css/knotgallery.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'siteframework/css/gallery.css' %}" type="text/css">
 
 {% endblock %}
 
@@ -28,14 +28,24 @@
 
 {% block main %}
 
-<div class="knot-gallery">
-	<section class="knot-gallery-row">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_login.png'%}" alt="Band_login.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_guitar.png'%}" alt="Band_guitar.png">
+<div class="band-gallery-title">
+	<h1>ONLINE-BAND, 2013</h1>
+		<div class= "back-to-work-button">
+			<a href="{% url 'work' %}">Back To Work Page</a>
+		</div>
+</div>
+
+<div class="band-gallery">
+	<section class="band-gallery-row">
+		<img class="band-gallery-pic" src="{% static 'siteframework/img/Band_login.png'%}" alt="Band_login.png">
+		<img class="band-gallery-pic" src="{% static 'siteframework/img/Band_guitar.png'%}" alt="Band_guitar.png">
+
+		<img class="band-gallery-pic" src="{% static 'siteframework/img/Band_drum.png'%}" alt="Band_drum.png">
+
 	</section>
-	<section class="knot-gallery-row"> 
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_drum.png'%}" alt="Band_drum.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/Band_bass.png'%}" alt="Band_bass.png">
+	<section class="band-gallery-row"> 
+		<img class="band-gallery-pic" src="{% static 'siteframework/img/Band_bass.png'%}" alt="Band_bass.png">
+		<img class="band-gallery-pic" src="{% static 'siteframework/img/Band_piano.png'%}" alt="Band_bass.png">
 	</section>
 
 </div>

@@ -1,7 +1,7 @@
 .home-text{
 	text-align: center;
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-	
+	color: rgb(190,190,190);
 }
 
 .recent{
@@ -12,11 +12,37 @@
 }
 
 .recent a{
-	text-decoration: none;	
+	text-decoration: none;
+	color: rgb(120,120,120);
+	transition: 0.5s;
+	margin-left: 0px;
+}
+
+.recent a:hover{
+	margin-left: 40px;
+	-webkit-animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
+	animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
+
 }
 
 .main-title{
-	background: #ccc;
+	background: #555;
 	padding-bottom: 100px;
 
+}
+
+@-webkit-keyframes colorchange{
+	0% { color: #d35400; }
+	25% {color: #f39c12;}
+	50% {color: #27ae60;}
+	75% {color: #2980b9;}
+	100% {color: #8e44ad;}
+}
+
+keyframes colorchange{
+	0% { color: #d35400; }
+	25% {color: #f39c12;}
+	50% {color: #27ae60;}
+	75% {color: #2980b9;}
+	100% {color: #8e44ad;}
 }

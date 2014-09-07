@@ -17,6 +17,11 @@ def knotgallery(request):
 def bandgallery(request):
 	return render(request, 'siteframework/bandgallery.html')
 
+def mapgallery(request):
+	return render(request, 'siteframework/mapgallery.html')
+
+
+
 
 def cmumap(request):
 	return render(request,'siteframework/cmumap.html')
