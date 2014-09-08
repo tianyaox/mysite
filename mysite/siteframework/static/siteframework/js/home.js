@@ -1,4 +1,4 @@
-var w = $(window).width(), h = $(window).height()*2/3;
+var w = $(window).width(), h = $(window).height()*7/12;
 
 
 // var color = d3.scale.category20();
@@ -217,7 +217,7 @@ var anchorNode = vis.selectAll("g.anchorNode").data(force2.nodes()).enter().appe
 anchorNode.append("svg:circle").attr("r", 0).style("fill", "#FFF");
 anchorNode.append("svg:text").text(function(d, i) {
 return i % 2 == 0 ? "" : d.node.label
-}).style("fill", "#999").style("font-family", "Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif").style("font-size", 12);
+}).style("fill", "#999").style("font-family", "'Open Sans', sans-serif").style("font-size", 12);
 
 var updateLink = function() {
 this.attr("x1", function(d) {

@@ -10,6 +10,8 @@
 html, body{
 	height: 100%;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	// font-family: 'Montserrat', sans-serif;
 // font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	// font-family: 'Ubuntu', sans-serif;
 	// color: #34485e;
@@ -19,6 +21,7 @@ header{
 	background: @heaer-bg-color;
 	height: 55px;
 	width: 100%;
+	text-transform: uppercase;
 	border-bottom: 2px solid @heaer-bg-color;
 	a{
 		text-decoration: none;
@@ -44,6 +47,7 @@ header{
 			-webkit-box-align:center;
 		}
 		ul{
+			font-size: 0.9em;
 			float: right;
 			margin-right: 20px;
 			height: 100%;
@@ -109,5 +113,11 @@ div.main{
 }
 li.active a{
 	color: lighten(@header-font-color, 20%);
+
+}
+
+footer{
+	background: @heaer-bg-color;
+	height: 80px;
 
 }

@@ -16,14 +16,35 @@
 	<div class="home-graph"></div>
 	<div class="home-text">
 		<p>Write code. Have fun.</p>
+		<div class="recent"><a href="{% url 'theeternal' %}" target="_blank">I recently made this! -></a></div>
+
 	</div>
-	<div class="recent"><a href="{% url 'theeternal' %}" target="_blank">I recently made this! -></a></div>
 </div>
 
 <div class="self-intro">
 	<div class="self-intro-wrap">
-		<p>Hi. I am Tianyao Xu. </p>
+		<p>Hi, I am Tianyao Xu. Thanks for visiting. I write code and create beautiful things.</p>
+		<p>Programing gives me the chance to create beauty in multiple ways. Producing neat, solid code, designing and implementing elegant UI are all what I love to do.</p>
 	</div>
+</div>
+<div class="line"></div>
+<div class="gallery">
+	<div class="gallery-wrap">
+		<div class="gallery-col1">
+			<div class="gallery-row">
+				<img src="{% static 'siteframework/img/KNOT_mycard.png'%}" alt="" onclick="location.href='{% url 'work'%}'">
+			</div>
+			<div class="gallery-row row2">
+				<img src="{% static 'siteframework/img/Band_guitar.png'%}" alt="" onclick="location.href='{% url 'work'%}'">
+				<img src="{% static 'siteframework/img/wayfinder_mobile2.png'%}" alt="" onclick="location.href='{% url 'work'%}'">
+			</div>
+			
+		</div>
+		<div class="gallery-col2">
+				<img src="{% static 'siteframework/img/wayfinderintro.png'%}" alt="" onclick="location.href='{% url 'work'%}'">
+		</div>
+	</div>
+
 </div>
 
 

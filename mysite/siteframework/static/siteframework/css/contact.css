@@ -4,6 +4,7 @@ div.clearfloat{
 div.contact-info{
 	width: 100%;
 	text-align: center;
+	line-height: 1.2em;
 }
 section.contact-wrap{
 	height: 100%;
@@ -50,7 +51,9 @@ keyframes colorchange{
 
 section.intro-mid{
 	/*float:left;*/
-	color: #7f8c8d;
+	/*color: #7f8c8d;*/
+	color: #3CA6AE;
+
 	text-align: left;
 	float: left;
 	margin-left: 40%;
@@ -59,9 +62,9 @@ section.intro-mid{
 
 section.intro-right{
 	/*float:right;*/
-	color: #3498db;
+	color: gray;
 	text-align: left;
-
+	font-size: 0.95em;
 	/*display: inline-block;*/
 	float: right;
 
@@ -69,5 +72,6 @@ section.intro-right{
 
 section.intro-right a{
 	text-decoration: none;
-	color: #3498db;
+	color: gray;
+
 }

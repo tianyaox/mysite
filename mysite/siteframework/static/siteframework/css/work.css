@@ -15,6 +15,7 @@ a.btn{
 	color: rgb(38,38,38);
 	border: 1.5px solid rgb(190,190,190);
 	border-radius: 5px;
+	font-weight: 400;
 
 	/*background: #2980b9;*/
 	width: 70%;
@@ -189,6 +190,7 @@ div.work-present section div.wrap-work section h2{
 	font-size: 1.5em;
 	/*color: rgb(38,38,38);*/
 	color: white;
+	text-transform: uppercase;
 }
 
 div.work-present section div.wrap-work section a.btn{

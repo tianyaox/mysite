@@ -1,6 +1,6 @@
 .home-text{
 	text-align: center;
-	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+	/*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
 	/*color: rgb(190,190,190);*/
 	color:white;
 }
@@ -28,7 +28,7 @@
 
 .main-title{
 	background: #555;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 
 }
 
@@ -46,4 +46,88 @@ keyframes colorchange{
 	50% {color: #27ae60;}
 	75% {color: #2980b9;}
 	100% {color: #8e44ad;}
+}
+
+
+.self-intro{
+	/*position: absolute;*/
+	
+	width: 55%;
+	text-align: center;
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 80px;
+
+}
+.self-intro-wrap{
+	margin: auto;
+	display: block;
+	line-height: 1.5em;
+	font-size: 1.05em;
+	/*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+
+}
+.gallery-col1{
+	vertical-align: top;
+	width: 45%;
+	/*margin: 2%;*/
+	margin-right: 2%;
+
+	display: inline-block;
+}
+.gallery-col1 .gallery-row{
+	width: 100%;
+}
+.gallery-col1 .gallery-row img{
+	width: 100%;
+	margin-bottom: 100px;
+
+
+}
+.gallery-col2{
+	width: 41%;
+	/*margin: 3%;*/
+	margin-left: 11%;
+	display: inline-block;
+}
+
+.gallery-col1 .gallery-row.row2 img{
+	width: 42%;
+	
+}
+.gallery-col1 .gallery-row.row2 img:first-of-type{
+	margin-right: 15%;
+}
+
+img{
+	box-shadow: 4px 4px;
+	-webkit-filter: grayscale(100%);
+	-webkit-transition:0.3s;
+	cursor: pointer;
+}
+
+img:hover{
+	-webkit-filter:none;
+}
+
+.gallery-col2 img{
+	width: 100%;
+
+}
+
+.gallery-wrap{
+	margin: auto;
+	/*text-align: center;*/
+	width: 75%;
+	margin-top: 100px;
+
+	margin-bottom: 50px;
+}
+
+
+.line{
+	border-top: 1px solid #aaa;
+	width: 75%;
+	text-align: center;
+	margin: auto;
 }
