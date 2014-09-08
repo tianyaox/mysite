@@ -73,10 +73,18 @@ var labelAnchors = [];
 var labelAnchorLinks = [];
 var links = [];
 
-var wordArr1 = ["django","python","javascript","css3","html5","ajax","sql"];
-var wordArr2 = ["node.js","javascript","css3","html5","phonegap","mongodb"];
-var wordArr3 = ["d3","java","c"];
+// 0-3
+var wordArr1 = ["javascript","css3","html5","ajax"];
+// 4-6
+var wordArr2 = ["django","python","sql"];
+// 7-9
+var wordArr3 = ["node.js","phonegap","mongodb"];
+var wordArr4 = ["d3","java","c","c++","LESS"];
 
+var linksList1 = [[0,1],[0,2],[0,3],[1,2],[1,3],[2,3]];
+var linksList2 = [[4,5],[5,6],[6,4]];
+var linksList3 = [[7,8],[8,9],[9,7]];
+var linksList4 = [[0,7],[0,8],[0,10],[2,4],[11,3],[14,1]];
 
 for (var i =0;i<wordArr1.length;i++){
 	var node = {label:wordArr1[i]};
@@ -111,6 +119,17 @@ for (var i =0;i<wordArr3.length;i++){
 	});		
 }
 
+for (var i =0;i<wordArr4.length;i++){
+	var node = {label:wordArr4[i]};
+	nodes.push(node);
+	labelAnchors.push({
+		node : node
+	});
+	labelAnchors.push({
+		node : node
+	});		
+}
+
 
 for(var i = 0; i < nodes.length; i++) {
 	labelAnchorLinks.push({
@@ -122,21 +141,56 @@ for(var i = 0; i < nodes.length; i++) {
 
 // var linksToBePushed = [[1,2],[2,3],[3,4],[4,5],[3,4],[4,5],[5,9],[9,10]];
 
-for (var i=0;i<wordArr1.length-1;i++){
+
+for (var i=0;i<linksList1.length;i++){
+	
 	links.push({
-		source: i,
-		target: i+1,
+		source: linksList1[i][0],
+		target: linksList1[i][1],
 		weight: 1
 	});
 }
 
-for (var i=0;i<wordArr2.length-1;i++){
+for (var i=0;i<linksList2.length;i++){
+	
 	links.push({
-		source: wordArr1.length+i,
-		target: wordArr1.length+i+1,
+		source: linksList2[i][0],
+		target: linksList2[i][1],
 		weight: 1
 	});
 }
+for (var i=0;i<linksList3.length;i++){
+	
+	links.push({
+		source: linksList3[i][0],
+		target: linksList3[i][1],
+		weight: 1
+	});
+}
+
+for (var i=0;i<linksList4.length;i++){
+	
+	links.push({
+		source: linksList4[i][0],
+		target: linksList4[i][1],
+		weight: 1
+	});
+}
+// for (var i=0;i<wordArr1.length-1;i++){
+// 	links.push({
+// 		source: i,
+// 		target: i+1,
+// 		weight: 1
+// 	});
+// }
+
+// for (var i=0;i<wordArr2.length-1;i++){
+// 	links.push({
+// 		source: wordArr1.length+i,
+// 		target: wordArr1.length+i+1,
+// 		weight: 1
+// 	});
+// }
 
 
 
@@ -163,7 +217,7 @@ var anchorNode = vis.selectAll("g.anchorNode").data(force2.nodes()).enter().appe
 anchorNode.append("svg:circle").attr("r", 0).style("fill", "#FFF");
 anchorNode.append("svg:text").text(function(d, i) {
 return i % 2 == 0 ? "" : d.node.label
-}).style("fill", "#555").style("font-family", "Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif").style("font-size", 12);
+}).style("fill", "#999").style("font-family", "Didot, 'Didot LT STD', 'Hoefler Text', Garamond, 'Times New Roman', serif").style("font-size", 12);
 
 var updateLink = function() {
 this.attr("x1", function(d) {

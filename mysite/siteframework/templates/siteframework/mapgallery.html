@@ -30,20 +30,35 @@
 {% block main %}
 
 <div class="knot-gallery-title map-gallery-title">
-	<h1>Router Finder, 2014</h1>
+	<h1>Route Finder, 2014</h1>
 		<div class= "back-to-work-button">
 			<a href="{% url 'work' %}">Back To Work Page</a>
 		</div>
 </div>
 
 
-<div class="knot-gallery">
-	<section class="knot-gallery-row">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/wayfinder.png'%}" alt="wayfinder.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/wayfinder_mobile1.png'%}" alt="wayfinder_mobile1.png">
-		<img class="knot-gallery-pic" src="{% static 'siteframework/img/wayfinder_mobile2.png'%}" alt="wayfinder_mobile2.png">
+<div class="knot-gallery map-gallery">
+	<section class="gallery-col1">
+		<section class="map-gallery-row1">
+			<img class="map-gallery-pic" src="{% static 'siteframework/img/wayfinder.png'%}" alt="wayfinder.png">
+		</section>
+		
+		<section class="map-gallery-row2">
+			<img class="map-gallery-pic" src="{% static 'siteframework/img/wayfinder_mobile1.png'%}" alt="wayfinder_mobile1.png">
+			<img class="map-gallery-pic" src="{% static 'siteframework/img/wayfinder_mobile2.png'%}" alt="wayfinder_mobile2.png">
+
+		</section>
+	</section>
+
+	<section class="gallery-col2">
+
+		<section class="map-gallery-row">
+			<img class="map-gallery-pic" src="{% static 'siteframework/img/wayfinderintro.png'%}" alt="wayfinderintro.png">
+		</section>
+
 
 	</section>
+
 <!-- 	<section class="knot-gallery-row"> 
 		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_mycard.png'%}" alt="KNOT_timeline.png">
 		<img class="knot-gallery-pic" src="{% static 'siteframework/img/KNOT_timeline.png'%}" alt="KNOT_timeline.png">
