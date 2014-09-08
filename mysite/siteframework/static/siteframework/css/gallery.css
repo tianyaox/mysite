@@ -3,6 +3,7 @@
 	margin: auto;
 	overflow: hidden;
 	margin-top: 20px;
+	margin-bottom: 60px;
 
 }
 
@@ -154,4 +155,8 @@ img.map-gallery-pic{
 }
 img.map-gallery-pic:hover{
 	-webkit-filter: none;
+}
+
+.map-gallery{
+	margin-bottom: 60px;
 }

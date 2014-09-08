@@ -101,7 +101,7 @@ keyframes colorchange{
 
 img{
 	box-shadow: 4px 4px;
-	-webkit-filter: grayscale(100%);
+	/*-webkit-filter: grayscale(100%);*/
 	-webkit-transition:0.3s;
 	cursor: pointer;
 }
