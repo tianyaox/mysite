@@ -19,10 +19,16 @@ img.knot-gallery-pic{
 	box-shadow: 5px 5px;
 	margin: 2%;
 	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
 	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
 }
 img.knot-gallery-pic:hover{
 	-webkit-filter: none;
+	filter:none;
+
+	-moz-filter: none;
 }
 
 img.band-gallery-pic{
@@ -30,7 +36,10 @@ img.band-gallery-pic{
 	box-shadow: 5px 5px;
 	margin: 2%;	
 	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
 	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
 }
 img.knot-gallery-pic.map-gallery-pic{
 	width: 20%;
@@ -42,6 +51,7 @@ img.knot-gallery-pic.map-gallery-pic:first-of-type{
 
 img.band-gallery-pic:hover{
 	-webkit-filter: none;
+	filter: none;
 
 }
 
@@ -87,8 +97,11 @@ img.band-gallery-pic:hover{
 	text-align: left;
 	height: 100%;
 	display: -webkit-box;
+	display: -moz-box;
 	-webkit-box-pack: center;
+	-moz-box-pack: center;
 	-webkit-box-align: center;
+	-moz-box-align: center;
 
 }
 
@@ -123,6 +136,7 @@ img.band-gallery-pic:hover{
 	width: 43%;
 	margin-left: 2%;
 	display: inline-block;
+	vertical-align: top;
 }
 
 .map-gallery-row{
@@ -151,12 +165,29 @@ img.map-gallery-pic{
 	box-shadow: 5px 5px;
 
 	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 	-webkit-transition:0.3s;
+	-moz-transition:0.3s;
 }
 img.map-gallery-pic:hover{
 	-webkit-filter: none;
+	filter: none;
 }
 
 .map-gallery{
 	margin-bottom: 60px;
+}
+
+p.map-gallery-text{
+	text-align: center;
+	font-size: 0.9em;
+	padding: 20px 10px 20px 10px;
+	line-height: 1.4em;
+	margin-top:20px;
+	/*margin-bottom:20px;*/
+	/*border: 1px solid rgba(190,190,190,0.5);*/
+	/*background: rgba(190,190,190,0.5);*/
+	/*border-top: 1px solid rgba(190,190,190,0.9);*/
+	/*border-bottom: 1px solid rgba(190,190,190,0.9);*/
+
 }

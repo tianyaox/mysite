@@ -22,6 +22,7 @@
 .recent a:hover{
 	margin-left: 40px;
 	-webkit-animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
+	-moz-animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
 	animation: colorchange 5s infinite; /* Chrome, Safari, Opera */ 
 
 }
@@ -30,6 +31,14 @@
 	background: #555;
 	padding-bottom: 50px;
 
+}
+
+@-moz-keyframes colorchange{
+	0% { color: #d35400; }
+	25% {color: #f39c12;}
+	50% {color: #27ae60;}
+	75% {color: #2980b9;}
+	100% {color: #8e44ad;}
 }
 
 @-webkit-keyframes colorchange{

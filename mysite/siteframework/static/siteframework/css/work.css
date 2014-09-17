@@ -54,9 +54,18 @@ section.work-title1 div.year1-wrap{
 
 section.work-title1 div.year1-wrap p.year1{
 	height: 100%;
-	display: -webkit-box;
-	-webkit-box-pack: center;
-	-webkit-box-align: center;
+
+	display:-moz-box;
+	display:-webkit-box;
+
+
+			
+	-moz-box-pack:center;
+	-moz-box-align:center;
+	-webkit-box-pack:center;
+	-webkit-box-align:center;
+
+
 	font-style: italic;
 	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }

@@ -14,11 +14,14 @@ body {
   nav.navbar.navbar-default.navbar-fixed-top {
     top: 0px;
     -webkit-transition: top 1s;
+    -moz-transition: top 1s;
     transition: top 1s;
   }
   nav.navbar.navbar-default.navbar-fixed-top.clicked {
     top: -50px;
     -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    
     transition: top 1s;
   }
   button.btn.btn-default.cancel-find {
