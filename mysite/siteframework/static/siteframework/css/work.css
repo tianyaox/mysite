@@ -95,8 +95,8 @@ div.work-present section.work2{
 section.work3{
 	background: #555;
 	transition: background 0.5s;
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 	filter: none;
 }
 
@@ -113,6 +113,7 @@ div.work-present section.work1:hover div.wrap-work img.KNOT-mycard{
 
 div.work-present section.work2:hover div.wrap-work img{
 	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
 	filter: grayscale(0);
 	filter: none;
 }
@@ -142,6 +143,8 @@ section.work2 div.wrap-work .work2-intro{
 div.work3-browser img{
 	cursor: pointer;
 	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
 }
 
 div.work-present section.work1 div.wrap-work img.KNOT-mycard{
@@ -150,9 +153,15 @@ div.work-present section.work1 div.wrap-work img.KNOT-mycard{
 	cursor: pointer;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
-	filter: url(#greyscale);
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.0\'/></filter></svg>#grayscale");
+	/*-webkit-filter: url('#greyscale1');*/
+	/*filter: url('#greyscale1');*/
 	filter: gray;
+	-webkit-filter: gray;
+	
 	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
 
 }
 
@@ -161,10 +170,20 @@ div.work-present section.work2 div.wrap-work img{
 	width: 250px;
 	cursor: pointer;
 	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
 	filter: grayscale(100%);
-	filter: url(#greyscale1);
+
+	/*-webkit-filter: url('#greyscale2');*/
+	/*filter: url('#greyscale2');*/
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'saturate\' values=\'0.0\'/></filter></svg>#grayscale");
+
+	
 	filter: gray;
+	-webkit-filter: gray;
+	
 	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
 	float: right;
 }
 
